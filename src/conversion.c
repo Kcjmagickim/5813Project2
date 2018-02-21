@@ -13,7 +13,9 @@ resides in the header file.
 #include <stdio.h>
 
 uint8_t my_itoa(int32_t data, uint8_t * ptr, uint32_t base){
-	int8_t exp, rem, i;
+	if(!ptr) return -1;
+	int8_t exp = 0;
+	int8_t rem, i;
 	int8_t neg = 0;
 	int32_t val = data;
 	if (base>16 || base<2) return -1;
@@ -22,6 +24,8 @@ uint8_t my_itoa(int32_t data, uint8_t * ptr, uint32_t base){
 			val/=base;
 			exp++;
 		}
+	}else if(val==0){
+		exp++;
 	}else{
 		val*=-1;
 		while(val>0){
@@ -55,6 +59,7 @@ int32_t my_atoi(uint8_t * ptr, uint8_t digits, uint32_t base){
 	int8_t i; 
 	int32_t val = 0;
 	int8_t neg = 0;
+	if(!ptr) return -1;
 	if (base>16 || base<2) return -1;
 	if (*ptr == '-'){
 		neg=1;

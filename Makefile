@@ -23,6 +23,9 @@ endif
 memory.o: memory.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c -o memory.o src/memory.c
 
+conversion.o: conversion.c
+	$(CC) $(CFLAGS) $(INCLUDES) -c -o conversion.o src/conversion.c
+
 mocka.o: mocka.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c -o mocka.o src/mocka.c
 
@@ -31,5 +34,5 @@ clean:
 	rm -f *.o *~ *.asm *.i *.d project1.elf
 
 .PHONY: unittests
-unittests: memory.o
-	$(CC) $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o unittests src/mocka.c memory.o $(CMOCKA_LIBRARY) -lm
+unittests: memory.o conversion.o
+	$(CC) $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o unittests src/mocka.c memory.o conversion.o $(CMOCKA_LIBRARY) -lm

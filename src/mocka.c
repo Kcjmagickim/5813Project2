@@ -6,6 +6,7 @@
 #include <stdio.h>
 
 #include "memory.h"
+#include "conversion.h"
 #include "mocka.h"
 
 uint8_t length = 4;
@@ -202,6 +203,53 @@ static void test_reverse4(void **state){	//String reversal
 	}
 }
 
+static void test_atoi1(void **state){	//NULL
+  	uint8_t test;
+  	test = my_atoi(NULL, 1, 10);
+  	assert_int_equal((uint8_t) -1, test);
+}
+
+static void test_atoi2(void **state){	//zero
+  	uint8_t test;
+  	test = my_atoi((uint8_t*) "0", 2, 10);
+  	assert_int_equal((uint8_t) 0, test);
+}
+
+static void test_atoi3(void **state){	//max
+  	uint32_t test;
+  	test = my_atoi((uint8_t*) "4294967295", 11, 10);
+  	assert_int_equal(4294967295, test);
+  	assert_int_equal(0, test+1);
+}
+
+static void test_itoa1(void **state){	//NULL
+  	uint8_t digits;
+  	digits = my_itoa(0, NULL, 10);
+  	assert_int_equal((uint8_t) -1,digits);
+}
+
+static void test_itoa2(void **state){	//zero
+  	char test[2];
+  	uint8_t digits;
+  	digits = my_itoa(0, (uint8_t*) test, 10);
+  	assert_int_equal((uint8_t) 2, digits);
+  	printf("%c\n", test[0]);
+  	assert_true(test[0] == '0');
+}
+
+static void test_itoa3(void **state){	//Max
+  	char test[11];
+  	char * tester = &test[0];
+  	char * ans = "2147483647";
+  	uint8_t digits;
+  	digits = my_itoa(2147483647, (uint8_t*) test, 10);
+  	assert_int_equal((uint8_t) 11, digits);
+  	for(i=0; i<11; i++){
+  	  	assert_true(*tester == *ans);
+  	  	tester+=sizeof(uint8_t); ans+=sizeof(uint8_t);
+  	  }
+}
+
 int main(void){
 	const struct CMUnitTest tests[] = {
         cmocka_unit_test(test_memmove1),
@@ -217,6 +265,12 @@ int main(void){
         cmocka_unit_test(test_reverse2),
         cmocka_unit_test(test_reverse3),
         cmocka_unit_test(test_reverse4),
+        cmocka_unit_test(test_atoi1),
+        cmocka_unit_test(test_atoi2),
+        cmocka_unit_test(test_atoi3),
+        cmocka_unit_test(test_itoa1),
+        cmocka_unit_test(test_itoa2),
+        cmocka_unit_test(test_itoa3),
     };
     return cmocka_run_group_tests(tests, NULL, NULL);
 }
