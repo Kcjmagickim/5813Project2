@@ -1,0 +1,605 @@
+The system is: Linux - 4.4.0-112-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: -std=c99;-Wall;-Werror;-g;-O0;-I;3rd-party/build-Debug/include
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3878073350/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3878073350.dir/build.make CMakeFiles/cmTryCompileExec3878073350.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3878073350.dir/testCCompiler.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include     -o CMakeFiles/cmTryCompileExec3878073350.dir/testCCompiler.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec3878073350
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3878073350.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include      CMakeFiles/cmTryCompileExec3878073350.dir/testCCompiler.c.o  -o cmTryCompileExec3878073350 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1957645226/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1957645226.dir/build.make CMakeFiles/cmTryCompileExec1957645226.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1957645226.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include     -o CMakeFiles/cmTryCompileExec1957645226.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1957645226
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1957645226.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include    -v CMakeFiles/cmTryCompileExec1957645226.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1957645226 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-std=c99' '-Wall' '-Werror' '-g' '-O0' '-I' '3rd-party/build-Debug/include' '-v' '-o' 'cmTryCompileExec1957645226' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1957645226 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1957645226.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1957645226/fast"]
+  ignore line: [make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1957645226.dir/build.make CMakeFiles/cmTryCompileExec1957645226.dir/build]
+  ignore line: [make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1957645226.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include     -o CMakeFiles/cmTryCompileExec1957645226.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1957645226]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1957645226.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include    -v CMakeFiles/cmTryCompileExec1957645226.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1957645226 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c99' '-Wall' '-Werror' '-g' '-O0' '-I' '3rd-party/build-Debug/include' '-v' '-o' 'cmTryCompileExec1957645226' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1957645226 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1957645226.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1957645226] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec1957645226.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test WITH_FPIC succeded with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1062114958/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1062114958.dir/build.make CMakeFiles/cmTryCompileExec1062114958.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1062114958.dir/src.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -DWITH_FPIC   -fPIC -o CMakeFiles/cmTryCompileExec1062114958.dir/src.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1062114958
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1062114958.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -DWITH_FPIC    CMakeFiles/cmTryCompileExec1062114958.dir/src.c.o  -o cmTryCompileExec1062114958 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test WITH_VISIBILITY_HIDDEN succeded with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2341651425/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2341651425.dir/build.make CMakeFiles/cmTryCompileExec2341651425.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2341651425.dir/src.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DWITH_VISIBILITY_HIDDEN   -fvisibility=hidden -o CMakeFiles/cmTryCompileExec2341651425.dir/src.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2341651425
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2341651425.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DWITH_VISIBILITY_HIDDEN    CMakeFiles/cmTryCompileExec2341651425.dir/src.c.o  -o cmTryCompileExec2341651425 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1352093678/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1352093678.dir/build.make CMakeFiles/cmTryCompileExec1352093678.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1352093678.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec1352093678.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1352093678
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1352093678.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec1352093678.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1352093678 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3224795925/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3224795925.dir/build.make CMakeFiles/cmTryCompileExec3224795925.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3224795925.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec3224795925.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3224795925
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3224795925.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec3224795925.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3224795925 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2866470748/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2866470748.dir/build.make CMakeFiles/cmTryCompileExec2866470748.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2866470748.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec2866470748.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2866470748
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2866470748.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec2866470748.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2866470748 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2853777076/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2853777076.dir/build.make CMakeFiles/cmTryCompileExec2853777076.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2853777076.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec2853777076.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2853777076
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2853777076.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec2853777076.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2853777076 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file setjmp.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1047450451/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1047450451.dir/build.make CMakeFiles/cmTryCompileExec1047450451.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1047450451.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec1047450451.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1047450451
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1047450451.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec1047450451.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1047450451 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1397635655/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1397635655.dir/build.make CMakeFiles/cmTryCompileExec1397635655.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1397635655.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec1397635655.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1397635655
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1397635655.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec1397635655.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1397635655 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec846182847/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec846182847.dir/build.make CMakeFiles/cmTryCompileExec846182847.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec846182847.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec846182847.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec846182847
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec846182847.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec846182847.dir/CheckIncludeFile.c.o  -o cmTryCompileExec846182847 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2027444058/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2027444058.dir/build.make CMakeFiles/cmTryCompileExec2027444058.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2027444058.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec2027444058.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2027444058
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2027444058.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec2027444058.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2027444058 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1988363409/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1988363409.dir/build.make CMakeFiles/cmTryCompileExec1988363409.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1988363409.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec1988363409.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1988363409
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1988363409.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec1988363409.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1988363409 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdio.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2536040685/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2536040685.dir/build.make CMakeFiles/cmTryCompileExec2536040685.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2536040685.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec2536040685.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2536040685
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2536040685.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec2536040685.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2536040685 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1101594380/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1101594380.dir/build.make CMakeFiles/cmTryCompileExec1101594380.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1101594380.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec1101594380.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1101594380
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1101594380.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec1101594380.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1101594380 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec726381370/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec726381370.dir/build.make CMakeFiles/cmTryCompileExec726381370.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec726381370.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec726381370.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec726381370
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec726381370.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec726381370.dir/CheckIncludeFile.c.o  -o cmTryCompileExec726381370 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1705287512/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1705287512.dir/build.make CMakeFiles/cmTryCompileExec1705287512.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1705287512.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec1705287512.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1705287512
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1705287512.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec1705287512.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1705287512 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec167887375/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec167887375.dir/build.make CMakeFiles/cmTryCompileExec167887375.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec167887375.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec167887375.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec167887375
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec167887375.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec167887375.dir/CheckIncludeFile.c.o  -o cmTryCompileExec167887375 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec365501049/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec365501049.dir/build.make CMakeFiles/cmTryCompileExec365501049.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec365501049.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec365501049.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec365501049
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec365501049.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec365501049.dir/CheckIncludeFile.c.o  -o cmTryCompileExec365501049 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file time.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2342626602/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2342626602.dir/build.make CMakeFiles/cmTryCompileExec2342626602.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2342626602.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec2342626602.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2342626602
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2342626602.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec2342626602.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2342626602 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2022976584/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2022976584.dir/build.make CMakeFiles/cmTryCompileExec2022976584.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2022976584.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec2022976584.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2022976584
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2022976584.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec2022976584.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2022976584 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function longjmp exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2925234347/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2925234347.dir/build.make CMakeFiles/cmTryCompileExec2925234347.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2925234347.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=longjmp   -o CMakeFiles/cmTryCompileExec2925234347.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2925234347
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2925234347.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=longjmp    CMakeFiles/cmTryCompileExec2925234347.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2925234347 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function siglongjmp exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3513594405/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3513594405.dir/build.make CMakeFiles/cmTryCompileExec3513594405.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3513594405.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=siglongjmp   -o CMakeFiles/cmTryCompileExec3513594405.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3513594405
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3513594405.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=siglongjmp    CMakeFiles/cmTryCompileExec3513594405.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3513594405 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function setjmp exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec303310616/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec303310616.dir/build.make CMakeFiles/cmTryCompileExec303310616.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec303310616.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=setjmp   -o CMakeFiles/cmTryCompileExec303310616.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec303310616
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec303310616.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=setjmp    CMakeFiles/cmTryCompileExec303310616.dir/CheckFunctionExists.c.o  -o cmTryCompileExec303310616 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function signal exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec209483793/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec209483793.dir/build.make CMakeFiles/cmTryCompileExec209483793.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec209483793.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=signal   -o CMakeFiles/cmTryCompileExec209483793.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec209483793
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec209483793.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=signal    CMakeFiles/cmTryCompileExec209483793.dir/CheckFunctionExists.c.o  -o cmTryCompileExec209483793 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strsignal exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec89700647/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec89700647.dir/build.make CMakeFiles/cmTryCompileExec89700647.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec89700647.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=strsignal   -o CMakeFiles/cmTryCompileExec89700647.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec89700647
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec89700647.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=strsignal    CMakeFiles/cmTryCompileExec89700647.dir/CheckFunctionExists.c.o  -o cmTryCompileExec89700647 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function clock_gettime exists passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1827176050/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1827176050.dir/build.make CMakeFiles/cmTryCompileExec1827176050.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1827176050.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTryCompileExec1827176050.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1827176050
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1827176050.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=clock_gettime    CMakeFiles/cmTryCompileExec1827176050.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1827176050 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_GCC_THREAD_LOCAL_STORAGE succeded with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4018612231/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4018612231.dir/build.make CMakeFiles/cmTryCompileExec4018612231.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4018612231.dir/src.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DHAVE_GCC_THREAD_LOCAL_STORAGE   -o CMakeFiles/cmTryCompileExec4018612231.dir/src.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec4018612231
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4018612231.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DHAVE_GCC_THREAD_LOCAL_STORAGE    CMakeFiles/cmTryCompileExec4018612231.dir/src.c.o  -o cmTryCompileExec4018612231 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+__thread int tls;
+
+int main(void) {
+    return 0;
+}
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3471950308/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3471950308.dir/build.make CMakeFiles/cmTryCompileExec3471950308.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3471950308.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec3471950308.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec3471950308
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3471950308.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec3471950308.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec3471950308 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+

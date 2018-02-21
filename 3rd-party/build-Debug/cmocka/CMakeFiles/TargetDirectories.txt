@@ -1,0 +1,11 @@
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/example/CMakeFiles/allocate_module_test.dir
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/example/CMakeFiles/assert_macro_test.dir
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/example/CMakeFiles/assert_module_test.dir
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/example/CMakeFiles/calculator_test.dir
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/src/CMakeFiles/cmocka_shared.dir
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/src/CMakeFiles/cmocka_static.dir
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/example/CMakeFiles/customer_database_test.dir
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/example/CMakeFiles/key_value_test.dir
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/example/CMakeFiles/product_database_test.dir
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/example/CMakeFiles/simple_test.dir
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/example/chef_wrap/CMakeFiles/waiter_test_wrap.dir

@@ -1,0 +1,9 @@
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/lib/pkgconfig/cmocka.pc
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/lib/cmake/cmocka/cmocka-config.cmake
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/lib/cmake/cmocka/cmocka-config-version.cmake
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/include/cmocka.h
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/include/cmocka_pbc.h
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/lib/libcmocka.so.0.4.0
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/lib/libcmocka.so.0
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/lib/libcmocka.so
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/lib/libcmocka.a

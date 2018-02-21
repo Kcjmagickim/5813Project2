@@ -1,0 +1,346 @@
+Performing C SOURCE FILE Test WITH_STACK_PROTECTOR failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2776757273/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2776757273.dir/build.make CMakeFiles/cmTryCompileExec2776757273.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2776757273.dir/src.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -DWITH_STACK_PROTECTOR   -fstack-protector -o CMakeFiles/cmTryCompileExec2776757273.dir/src.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/src.c
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/src.c:1:27: error: unused parameter ‘argv’ [-Werror=unused-parameter]
+ int main(int argc, char **argv) { char buffer[256]; return buffer[argc]=0;}
+                           ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec2776757273.dir/src.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec2776757273/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(int argc, char **argv) { char buffer[256]; return buffer[argc]=0;}
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec551841735/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec551841735.dir/build.make CMakeFiles/cmTryCompileExec551841735.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec551841735.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec551841735.dir/CheckIncludeFile.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:16: fatal error: io.h: No such file or directory
+ #include <io.h>
+                ^
+compilation terminated.
+make[3]: *** [CMakeFiles/cmTryCompileExec551841735.dir/CheckIncludeFile.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec551841735/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_STRUCT_TIMESPEC failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1312211189/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1312211189.dir/build.make CMakeFiles/cmTryCompileExec1312211189.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1312211189.dir/src.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DHAVE_STRUCT_TIMESPEC   -o CMakeFiles/cmTryCompileExec1312211189.dir/src.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/src.c
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/src.c:7:4: error: statement with no effect [-Werror=unused-value]
+    tmp->tv_sec;
+    ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec1312211189.dir/src.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec1312211189/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <time.h>
+
+int main()
+{
+   struct timespec* tmp;
+   tmp->tv_sec;
+  return 0;
+}
+
+Determining if the function calloc exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3316274858/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3316274858.dir/build.make CMakeFiles/cmTryCompileExec3316274858.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3316274858.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=calloc   -o CMakeFiles/cmTryCompileExec3316274858.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘calloc’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec3316274858.dir/CheckFunctionExists.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec3316274858/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function exit exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2948706043/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2948706043.dir/build.make CMakeFiles/cmTryCompileExec2948706043.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2948706043.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=exit   -o CMakeFiles/cmTryCompileExec2948706043.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘exit’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[3]: *** [CMakeFiles/cmTryCompileExec2948706043.dir/CheckFunctionExists.c.o] Error 1
+make[2]: *** [cmTryCompileExec2948706043/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function fprintf exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2182846744/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2182846744.dir/build.make CMakeFiles/cmTryCompileExec2182846744.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2182846744.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=fprintf   -o CMakeFiles/cmTryCompileExec2182846744.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘fprintf’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec2182846744.dir/CheckFunctionExists.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec2182846744/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function free exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3751524755/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3751524755.dir/build.make CMakeFiles/cmTryCompileExec3751524755.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3751524755.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=free   -o CMakeFiles/cmTryCompileExec3751524755.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘free’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec3751524755.dir/CheckFunctionExists.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec3751524755/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function malloc exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1045870216/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1045870216.dir/build.make CMakeFiles/cmTryCompileExec1045870216.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1045870216.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=malloc   -o CMakeFiles/cmTryCompileExec1045870216.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘malloc’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec1045870216.dir/CheckFunctionExists.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec1045870216/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memcpy exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec770403693/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec770403693.dir/build.make CMakeFiles/cmTryCompileExec770403693.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec770403693.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=memcpy   -o CMakeFiles/cmTryCompileExec770403693.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘memcpy’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec770403693.dir/CheckFunctionExists.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec770403693/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memset exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1436307224/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1436307224.dir/build.make CMakeFiles/cmTryCompileExec1436307224.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1436307224.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=memset   -o CMakeFiles/cmTryCompileExec1436307224.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘memset’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec1436307224.dir/CheckFunctionExists.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec1436307224/fast] Error 2
+
+
+Determining if the function printf exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3152569969/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3152569969.dir/build.make CMakeFiles/cmTryCompileExec3152569969.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3152569969.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=printf   -o CMakeFiles/cmTryCompileExec3152569969.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘printf’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec3152569969.dir/CheckFunctionExists.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec3152569969/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strcmp exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2697831675/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2697831675.dir/build.make CMakeFiles/cmTryCompileExec2697831675.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2697831675.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=strcmp   -o CMakeFiles/cmTryCompileExec2697831675.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘strcmp’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec2697831675.dir/CheckFunctionExists.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec2697831675/fast] Error 2
+
+
+Determining if the function sprintf exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4011107639/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4011107639.dir/build.make CMakeFiles/cmTryCompileExec4011107639.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4011107639.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=sprintf   -o CMakeFiles/cmTryCompileExec4011107639.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘sprintf’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec4011107639.dir/CheckFunctionExists.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec4011107639/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the function vsnprintf exists failed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3016732462/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3016732462.dir/build.make CMakeFiles/cmTryCompileExec3016732462.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3016732462.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -DCHECK_FUNCTION_EXISTS=vsnprintf   -o CMakeFiles/cmTryCompileExec3016732462.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: error: conflicting types for built-in function ‘vsnprintf’ [-Werror]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+cc1: all warnings being treated as errors
+make[3]: *** [CMakeFiles/cmTryCompileExec3016732462.dir/CheckFunctionExists.c.o] Error 1
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec3016732462/fast] Error 2
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2876410806/fast"
+make[2]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2876410806.dir/build.make CMakeFiles/cmTryCompileExec2876410806.dir/build
+make[3]: Entering directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2876410806.dir/TestEndianess.c.o
+/usr/bin/cc   -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE    -o CMakeFiles/cmTryCompileExec2876410806.dir/TestEndianess.c.o   -c /home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec2876410806
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2876410806.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c99 -Wall -Werror -g -O0 -I 3rd-party/build-Debug/include  -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wundef -fPIC -D_GNU_SOURCE -D_LARGEFILE64_SOURCE     CMakeFiles/cmTryCompileExec2876410806.dir/TestEndianess.c.o  -o cmTryCompileExec2876410806 -rdynamic 
+make[3]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory `/home/john/ecen5813/tutorials/unit_tests/3rd-party/build-Debug/cmocka/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
