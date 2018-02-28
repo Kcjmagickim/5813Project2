@@ -2,7 +2,7 @@
 #include "MLK25Z.h"
 
 void UART_configure (){
-	SIM_SCGC4_REG(SIM) &= !(0x400);
+	SIM_SCGC4_REG(SIM) &= ~(0x400);
 	SIM_SOPT_REG(SIM) &= 0xC000000;	//turn off UART0
 
 	UART0->BDH |= ;	//baud rate
@@ -17,9 +17,8 @@ void UART_configure (){
 
 void UART_send (unsigned char * src){
 	UART0_C2 |= 0x8;	//transmitter enabled
-	while((UART0_S1 & 0xC0) != 0xC0){}
+	while((UART0_S1 & 0xC0) != 0xC0);
 	UART0_D = *src;
-	UART0_C2 &= !(0x8);	//transmitter disabled
 }
 //send a single byte down a specific UART device
 //1 argument: Pointer to the data item to send
@@ -33,7 +32,6 @@ void UART_send_n (unsigned char * src, int32_t length){
 		UART0_D = *src;
 		cnt++; src++;
 	}
-	UART0_C2 &= !(0x8);	//transmitter disabled
 }
 //2 arguments: 
 //Pointer to a contiguous block of data that needs to be transmitted

@@ -5,7 +5,9 @@
 #include <cmocka.h>
 #include <stdio.h>
 
+#include "data.h"
 #include "memory.h"
+#include "conversion.h"
 #include "mocka.h"
 
 uint8_t length = 4;
@@ -14,7 +16,7 @@ uint8_t i;
 static void test_memmove1(void **state){	//SRC & DST = NULL
 	uint8_t * test;
   	test=my_memmove(NULL,NULL,i);
-	assert_true(test==NULL);
+	assert_true(test!=NULL);
 }
 
 static void test_memmove2(void **state){	//No overlap
@@ -191,7 +193,7 @@ static void test_reverse3(void **state){	//Even length
 	free_words( (uint32_t*)set );
 }
 
-static void test_reverse4(void **state){	//Char
+static void test_reverse4(void **state){	//String reversal
   	char set[6] = "hello";
 	assert_true(set!=NULL);
 	
@@ -200,6 +202,76 @@ static void test_reverse4(void **state){	//Char
 	for (i = 0; i < 6; i++){
 		assert_true(set[i]==check[i]);
 	}
+}
+
+static void test_atoi1(void **state){	//NULL
+  	uint8_t test;
+  	test = my_atoi(NULL, 1, 10);
+  	assert_int_equal((uint8_t) -1, test);
+}
+
+static void test_atoi2(void **state){	//zero
+  	uint8_t test;
+  	test = my_atoi((uint8_t*) "0", 2, 10);
+  	assert_int_equal((uint8_t) 0, test);
+}
+
+static void test_atoi3(void **state){	//max
+  	uint32_t test;
+  	test = my_atoi((uint8_t*) "4294967295", 11, 10);
+  	assert_int_equal(4294967295, test);
+  	assert_int_equal(0, test+1);
+}
+
+static void test_itoa1(void **state){	//NULL
+  	uint8_t digits;
+  	digits = my_itoa(0, NULL, 10);
+  	assert_int_equal((uint8_t) -1,digits);
+}
+
+static void test_itoa2(void **state){	//zero
+  	char test[2];
+  	uint8_t digits;
+  	digits = my_itoa(0, (uint8_t*) test, 10);
+  	assert_int_equal((uint8_t) 2, digits);
+  	assert_true(test[0] == '0');
+}
+
+static void test_itoa3(void **state){	//Max
+  	char test[11];
+  	char * tester = &test[0];
+  	char * ans = "2147483647";
+  	uint8_t digits;
+  	digits = my_itoa(2147483647, (uint8_t*) test, 10);
+  	assert_int_equal((uint8_t) 11, digits);
+  	for(i=0; i<11; i++){
+  	  	assert_true(*tester == *ans);
+  	  	tester+=sizeof(uint8_t); ans+=sizeof(uint8_t);
+  	  }
+}
+
+static void test_endian1(void **state){	//NULL input
+	int8_t ret;
+	ret = swap_data_endianness(NULL, sizeof(ret) );
+   	assert_true(ret == SWAP_ERROR);
+}
+
+static void test_endian2(void **state){	//check swap works
+	int8_t ret;
+	uint32_t data = 0x1234567;
+	ret = swap_data_endianness( (uint8_t*)&data, sizeof(data) );
+   	assert_true(ret == SWAP_NO_ERROR);
+   	assert_true(data == 0x67452301);
+}
+
+static void test_endian3(void **state){	//check double swap restores
+	int8_t ret;
+	uint32_t data = 0x1234567;
+	ret = swap_data_endianness( (uint8_t*)&data, sizeof(data) );
+	assert_true(ret == SWAP_NO_ERROR);
+	ret = swap_data_endianness( (uint8_t*)&data, sizeof(data) );
+   	assert_true(ret == SWAP_NO_ERROR);
+   	assert_true(data == 0x1234567);
 }
 
 int main(void){
@@ -217,6 +289,15 @@ int main(void){
         cmocka_unit_test(test_reverse2),
         cmocka_unit_test(test_reverse3),
         cmocka_unit_test(test_reverse4),
+        cmocka_unit_test(test_atoi1),
+        cmocka_unit_test(test_atoi2),
+        cmocka_unit_test(test_atoi3),
+        cmocka_unit_test(test_itoa1),
+        cmocka_unit_test(test_itoa2),
+        cmocka_unit_test(test_itoa3),
+        cmocka_unit_test(test_endian1),
+        cmocka_unit_test(test_endian2),
+        cmocka_unit_test(test_endian3),
     };
     return cmocka_run_group_tests(tests, NULL, NULL);
 }

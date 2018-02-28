@@ -5,6 +5,7 @@
 #include <cmocka.h>
 #include <stdio.h>
 
+#include "data.h"
 #include "memory.h"
 #include "conversion.h"
 #include "mocka.h"
@@ -233,7 +234,6 @@ static void test_itoa2(void **state){	//zero
   	uint8_t digits;
   	digits = my_itoa(0, (uint8_t*) test, 10);
   	assert_int_equal((uint8_t) 2, digits);
-  	printf("%c\n", test[0]);
   	assert_true(test[0] == '0');
 }
 
@@ -248,6 +248,30 @@ static void test_itoa3(void **state){	//Max
   	  	assert_true(*tester == *ans);
   	  	tester+=sizeof(uint8_t); ans+=sizeof(uint8_t);
   	  }
+}
+
+static void test_endian1(void **state){	//NULL input
+	int8_t ret;
+	ret = swap_data_endianness(NULL, sizeof(ret) );
+   	assert_true(ret == SWAP_ERROR);
+}
+
+static void test_endian2(void **state){	//check swap works
+	int8_t ret;
+	uint32_t data = 0x1234567;
+	ret = swap_data_endianness( (uint8_t*)&data, sizeof(data) );
+   	assert_true(ret == SWAP_NO_ERROR);
+   	assert_true(data == 0x67452301);
+}
+
+static void test_endian3(void **state){	//check double swap restores
+	int8_t ret;
+	uint32_t data = 0x1234567;
+	ret = swap_data_endianness( (uint8_t*)&data, sizeof(data) );
+	assert_true(ret == SWAP_NO_ERROR);
+	ret = swap_data_endianness( (uint8_t*)&data, sizeof(data) );
+   	assert_true(ret == SWAP_NO_ERROR);
+   	assert_true(data == 0x1234567);
 }
 
 int main(void){
@@ -271,6 +295,9 @@ int main(void){
         cmocka_unit_test(test_itoa1),
         cmocka_unit_test(test_itoa2),
         cmocka_unit_test(test_itoa3),
+        cmocka_unit_test(test_endian1),
+        cmocka_unit_test(test_endian2),
+        cmocka_unit_test(test_endian3),
     };
     return cmocka_run_group_tests(tests, NULL, NULL);
 }
