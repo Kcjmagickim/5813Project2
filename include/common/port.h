@@ -87,13 +87,11 @@ void PORTD_Toggle(uint8_t bit_num);
 #define RGB_RED_TOGGLE() (PORTB_Toggle( RGB_RED_PIN ))
 
 
-
 #define RGB_GREEN_ON()     (PORTB_Clear( RGB_GREEN_PIN ))
 
 #define RGB_GREEN_OFF()    (PORTB_Set( RGB_GREEN_PIN ))
 
 #define RGB_GREEN_TOGGLE() (PORTB_Toggle( RGB_GREEN_PIN ))
-
 
 
 #define RGB_BLUE_ON()     (PORTD_Clear( RGB_BLUE_PIN ))
