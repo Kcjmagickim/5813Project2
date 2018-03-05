@@ -4,10 +4,11 @@
 #include <setjmp.h>
 #include <cmocka.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 #include "data.h"
 #include "memory.h"
 #include "conversion.h"
+#include "circbuf.h"
 #include "mocka.h"
 
 uint8_t length = 4;
@@ -274,6 +275,118 @@ static void test_endian3(void **state){	//check double swap restores
    	assert_true(data == 0x1234567);
 }
 
+static void test_circbuf1(void **state){ //check allocation
+	CB_t * buffer = malloc(sizeof(CB_t));
+	assert_non_null(buffer);
+	CB_e ret = CB_init(buffer, 10);
+	assert_true(ret == SUCCESS);
+	ret = CB_destroy(buffer);
+	assert_true(ret == SUCCESS);
+	free(buffer);
+}
+
+static void test_circbuf2(void **state){ //check NULL PTR
+	CB_t * buffer = malloc(sizeof(CB_t));
+	assert_non_null(buffer);
+	CB_e ret = CB_init(NULL, 10);
+	assert_true(ret == NULL_PTR);
+	ret = CB_destroy(NULL);
+	assert_true(ret == NULL_PTR);
+	free(buffer);
+}
+
+static void test_circbuf3(void **state){ //check Add/Remove
+	CB_t * buffer = malloc(sizeof(CB_t));
+	assert_non_null(buffer);
+	CB_e ret = CB_init(buffer, 3);
+	assert_true(ret==SUCCESS);
+	ret = CB_buffer_add_item(buffer, 1);
+	assert_true(ret==SUCCESS);
+	ret = CB_buffer_add_item(buffer, 2);
+	assert_true(ret==SUCCESS);
+	ret = CB_buffer_add_item(buffer, 3);
+	assert_true(ret==SUCCESS);
+	uint8_t out;
+	ret = CB_buffer_remove_item(buffer, &out);
+	assert_true(ret==SUCCESS);
+	assert_true(out==1);
+	ret = CB_buffer_remove_item(buffer, &out);
+	assert_true(ret==SUCCESS);
+	assert_true(out==2);
+	ret = CB_buffer_remove_item(buffer, &out);
+	assert_true(ret==SUCCESS);
+	assert_true(out==3);
+	ret = CB_destroy(buffer);
+	free(buffer);
+}
+
+static void test_circbuf4(void **state){ //check is_full, is_empty
+	CB_t * buffer = malloc(sizeof(CB_t));
+	CB_e ret = CB_init(buffer, 3);
+	ret = CB_buffer_add_item(buffer, 1);
+	ret = CB_buffer_add_item(buffer, 2);
+	ret = CB_buffer_add_item(buffer, 3);
+	uint8_t out;
+	ret = CB_is_full(buffer);
+	assert_true(ret==FULL);
+	ret = CB_buffer_remove_item(buffer, &out);
+	ret = CB_buffer_remove_item(buffer, &out);
+	ret = CB_buffer_remove_item(buffer, &out);
+	ret = CB_is_empty(buffer);
+	assert_true(ret==EMPTY);
+	ret = CB_destroy(buffer);
+	free(buffer);
+}
+
+static void test_circbuf5(void **state){ //check wrap around
+	uint8_t out;
+	CB_t * buffer = malloc(sizeof(CB_t));
+	CB_e ret = CB_init(buffer, 3);
+	ret = CB_buffer_add_item(buffer, 1);
+	ret = CB_buffer_add_item(buffer, 2);
+	ret = CB_buffer_remove_item(buffer, &out);
+	ret = CB_buffer_remove_item(buffer, &out);
+
+	ret = CB_buffer_add_item(buffer, 3);
+	assert_true(ret==SUCCESS);
+	ret = CB_buffer_add_item(buffer, 4);
+	assert_true(ret==SUCCESS);
+	ret = CB_buffer_add_item(buffer, 5);
+	assert_true(ret==SUCCESS);
+	ret = CB_buffer_remove_item(buffer, &out);
+	assert_true(ret==SUCCESS);
+	assert_true(out==3);
+	ret = CB_buffer_remove_item(buffer, &out);
+	assert_true(ret==SUCCESS);
+	assert_true(out==4);
+	ret = CB_buffer_remove_item(buffer, &out);
+	assert_true(ret==SUCCESS);
+	assert_true(out==5);
+	ret = CB_destroy(buffer);
+	free(buffer);
+}
+
+
+static void test_circbuf6(void **state){ //check failure on empty and full
+	CB_t * buffer = malloc(sizeof(CB_t));
+	CB_e ret = CB_init(buffer, 3);
+	ret = CB_buffer_add_item(buffer, 1);
+	ret = CB_buffer_add_item(buffer, 2);
+	ret = CB_buffer_add_item(buffer, 3);
+
+	uint8_t out;
+	ret = CB_buffer_add_item(buffer, 3);
+	assert_true(ret==FULL);
+	ret = CB_buffer_remove_item(buffer, &out);
+	ret = CB_buffer_remove_item(buffer, &out);
+	ret = CB_buffer_remove_item(buffer, &out);
+	ret = CB_buffer_remove_item(buffer, &out);
+	assert_true(ret==EMPTY);
+	ret = CB_destroy(buffer);
+	free(buffer);
+}
+
+
 int main(void){
 	const struct CMUnitTest tests[] = {
         cmocka_unit_test(test_memmove1),
@@ -298,6 +411,13 @@ int main(void){
         cmocka_unit_test(test_endian1),
         cmocka_unit_test(test_endian2),
         cmocka_unit_test(test_endian3),
+        cmocka_unit_test(test_circbuf1),
+        cmocka_unit_test(test_circbuf2),
+        cmocka_unit_test(test_circbuf3),
+        cmocka_unit_test(test_circbuf4),
+        cmocka_unit_test(test_circbuf5),
+        cmocka_unit_test(test_circbuf6),
+
     };
     return cmocka_run_group_tests(tests, NULL, NULL);
 }

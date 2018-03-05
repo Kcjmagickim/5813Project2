@@ -7,6 +7,9 @@
 #ifndef CIRCBUF_H
 #define CIRCBUF_H
 
+#include <stdio.h>
+#include <stdint.h>
+
 typedef struct {
 	uint8_t * begin;
 	uint8_t * end;
@@ -17,11 +20,11 @@ typedef struct {
 } CB_t;
 
 typedef enum {
-	SUCCESS;
-	NULL_PTR;
-	NO_LENGTH;
-	FULL;
-	EMPTY;
+	SUCCESS,
+	NULL_PTR,
+	NO_LENGTH,
+	FULL,
+	EMPTY,
 } CB_e;
 
 
@@ -48,18 +51,25 @@ CB_e CB_buffer_add_item(CB_t *buf, uint8_t in);
 //returns an enumeration that specifies the success, failure etc. of the function call
 //consider the corner cases possible
 
-CB_e CB_buffer_remove_item(CB_t *buf, uint8_t out);
+CB_e CB_buffer_remove_item(CB_t *buf, uint8_t * out);
 //2 arguments: Pointer to the circular buffer  Variable to store/return the removed item
 //returns an enumeration that specifies the success, failure etc. of the function call
 //Must take into consideration the corner cases possible
 
-CB_e CB_is_full(CB_t *buf)_attribute__((always_inline)) inline __INLINE;
+__attribute__((always_inline)) static inline CB_e CB_is_full(CB_t *buf){
+	if (!buf) return NULL_PTR;
+	return (buf->count == buf->length) ? FULL : 0;
+}
 //check if it is full
 //0 = Buffer is not full 	1 = Buffer is full
 //should be implemented as an inline function with a few as operations as possible.
 
-CB_e CB_is_empty(CB_t *buf) _attribute__((always_inline)) inline __INLINE;
-The function will take in the circular buffer pointer to check if it is empty
+__attribute__((always_inline)) static inline CB_e CB_is_empty(CB_t *buf){
+	if (!buf) return NULL_PTR;
+	return (buf->count == 0) ? EMPTY : 0;
+}
+ //  __INLINE
+//The function will take in the circular buffer pointer to check if it is empty
 //0 = Buffer is not empty 	1 = Buffer is empty
 //should be implemented as an inline function with a few as operations as possible.
 

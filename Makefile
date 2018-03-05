@@ -40,6 +40,9 @@ endif
 arch_arm32.o: arch_arm32.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c -o arch_arm32.o src/arch_arm32.c
 
+circbuf.o: circbuf.c
+	$(CC) $(CFLAGS) $(INCLUDES) -c -o circbuf.o src/circbuf.c
+
 memory.o: memory.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c -o memory.o src/memory.c
 
@@ -60,5 +63,5 @@ clean:
 	rm -f *.o *~ *.asm *.i *.d project1.elf
 
 .PHONY: unittests
-unittests: memory.o conversion.o data.o
-	$(CC) $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o unittests src/mocka.c memory.o data.o conversion.o $(CMOCKA_LIBRARY) -lm
+unittests: memory.o conversion.o data.o circbuf.o
+	$(CC) $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o unittests src/mocka.c memory.o data.o conversion.o circbuf.o $(CMOCKA_LIBRARY) -lm
