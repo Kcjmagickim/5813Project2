@@ -1,3 +1,14 @@
+/**********************************
+@file: circbuf.c
+@brief: circular buffer functions
+To be used to send and receive uart data
+@author: John Kim
+@date: Feb 23rd, 2018
+
+Note: All function descriptions
+resides in the header file.
+***********************************/
+
 #include <stdlib.h>
 #include <stdint.h>
 #include "circbuf.h"
@@ -26,6 +37,7 @@ CB_e CB_destroy(CB_t *buf){
 }
 
 CB_e CB_buffer_add_item(CB_t *buf, uint8_t in){
+	START_CRITICAL;
 	if (!buf) return NULL_PTR;
 	if (buf->count == buf->length) return FULL;
 	*(buf->tail) = in;
@@ -35,13 +47,12 @@ CB_e CB_buffer_add_item(CB_t *buf, uint8_t in){
 	}else{
 		(buf -> tail) ++;
 	}
+	END_CRITICAL;
 	return SUCCESS;
 }
-//2 arguments: Pointer to the circular buffer to add items	data to be added
-//returns an enumeration that specifies the success, failure etc. of the function call
-//consider the corner cases possible
 
 CB_e CB_buffer_remove_item(CB_t *buf, uint8_t * out){
+	START_CRITICAL;
 	if (!buf | !out) return NULL_PTR;
 	if (buf->count == 0) return EMPTY;
 	*out = *(buf->head);
@@ -51,38 +62,14 @@ CB_e CB_buffer_remove_item(CB_t *buf, uint8_t * out){
 	}else{
 		(buf -> head) ++;
 	}
+	END_CRITICAL;
 	return SUCCESS;
 }
 
-//2 arguments: Pointer to the circular buffer  Variable to store/return the removed item
-//returns an enumeration that specifies the success, failure etc. of the function call
-//Must take into consideration the corner cases possible
-
-/*CB_e CB_is_full(CB_t *buf){
-	if (!buf) return NULL_PTR;
-	return (buf->count == buf->length) ? FULL : 0;
-}
-//check if it is full
-//0 = Buffer is not full 	1 = Buffer is full
-//should be implemented as an inline function with a few as operations as possible.
-
-CB_e CB_is_empty(CB_t *buf){
-	if (!buf) return NULL_PTR;
-	return (buf->count == 0) ? EMPTY : 0;
-}
-//The function will take in the circular buffer pointer to check if it is empty
-//0 = Buffer is not empty 	1 = Buffer is empty
-//should be implemented as an inline function with a few as operations as possible.
-*/
-
-CB_e CB_peek(CB_t *buf, size_t position, uint8_t peek){
+CB_e CB_peek(CB_t *buf, size_t position, uint8_t * peek){
 	if (!buf) return NULL_PTR;
 	if (position<=0) return NULL_PTR;
 	uint8_t *ptr = (uint8_t *) buf->begin + position*sizeof(uint8_t);
-	peek = *(ptr);
+	*peek = *(ptr);
 	return SUCCESS;
 }
-//3 args: Pointer to the circular buffer 	position from the head of the buffer to peek into
-//A pointer to hold the data you peeked at
-//returns the status of the circular buffer or an error codes
-//Must take into consideration the corner cases possible

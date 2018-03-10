@@ -14,8 +14,8 @@
 
 uint8_t * my_memmove(uint8_t *src, uint8_t *dst, size_t length);
 /***************************************
-@brief: moves from the source to destination. Coded to 
-		protect from corruption due to overlapping memory address 
+@brief: moves from the source to destination. Coded to
+		protect from corruption due to overlapping memory address
 @param: src-place to get the copy 	dst-place to paste 	length-number of elements to copy
 @return: destination pointer(dst)
 ****************************************/

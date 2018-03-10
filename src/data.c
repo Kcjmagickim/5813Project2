@@ -6,7 +6,7 @@
 @author: John Kim
 @date: Feb 3rd, 2018
 
-Note: All function descriptions 
+Note: All function descriptions
 resides in the header file.
 ***********************************/
 
@@ -22,25 +22,25 @@ void print_cstd_type_sizes(){
 	temp = sizeof(short);
 	PRINTF("size of short = %zd", temp);
 	temp = sizeof(int);
-	PRINTF("size of int = %zd", temp);		
+	PRINTF("size of int = %zd", temp);
 	temp = sizeof(long);
-	PRINTF("size of long = %zd", temp);		
+	PRINTF("size of long = %zd", temp);
 	temp = sizeof(double);
-	PRINTF("size of double = %zd", temp);		
+	PRINTF("size of double = %zd", temp);
 	temp = sizeof(float);
-	PRINTF("size of float = %zd", temp);		
+	PRINTF("size of float = %zd", temp);
 	temp = sizeof(unsigned char);
-	PRINTF("size of unsigned char = %zd", temp);		
+	PRINTF("size of unsigned char = %zd", temp);
 	temp = sizeof(unsigned int);
-	PRINTF("size of unsigned int = %zd", temp);		
+	PRINTF("size of unsigned int = %zd", temp);
 	temp = sizeof(unsigned long);
-	PRINTF("size of unsigned long = %zd", temp);		
+	PRINTF("size of unsigned long = %zd", temp);
 	temp = sizeof(signed char);
-	PRINTF("size of signed char = %zd", temp);		
+	PRINTF("size of signed char = %zd", temp);
 	temp = sizeof(signed int);
-	PRINTF("size of signed int = %zd", temp);		
+	PRINTF("size of signed int = %zd", temp);
 	temp = sizeof(signed long);
-	PRINTF("size of signed long = %zd", temp);	
+	PRINTF("size of signed long = %zd", temp);
 }
 
 void print_stdint_type_sizes(){
@@ -82,27 +82,27 @@ void print_pointer_sizes(){
 	temp = sizeof(short *);
 	PRINTF("size of short * = %zd", temp);
 	temp = sizeof(int *);
-	PRINTF("size of int * = %zd", temp);		
+	PRINTF("size of int * = %zd", temp);
 	temp = sizeof(long *);
-	PRINTF("size of long * = %zd", temp);		
+	PRINTF("size of long * = %zd", temp);
 	temp = sizeof(double *);
-	PRINTF("size of double * = %zd", temp);		
+	PRINTF("size of double * = %zd", temp);
 	temp = sizeof(float *);
-	PRINTF("size of float * = %zd", temp);		
+	PRINTF("size of float * = %zd", temp);
 	temp = sizeof(void *);
-	PRINTF("size of void * = %zd", temp);		
+	PRINTF("size of void * = %zd", temp);
 	temp = sizeof(int8_t *);
-	PRINTF("size of int8_t * = %zd", temp);		
+	PRINTF("size of int8_t * = %zd", temp);
 	temp = sizeof(int16_t *);
-	PRINTF("size of int16_t * = %zd", temp);		
+	PRINTF("size of int16_t * = %zd", temp);
 	temp = sizeof(int32_t *);
-	PRINTF("size of int32_t * = %zd", temp);		
+	PRINTF("size of int32_t * = %zd", temp);
 	temp = sizeof(char **);
-	PRINTF("size of char ** = %zd", temp);		
+	PRINTF("size of char ** = %zd", temp);
 	temp = sizeof(int **);
-	PRINTF("size of int ** = %zd", temp);	
+	PRINTF("size of int ** = %zd", temp);
 	temp = sizeof(void **);
-	PRINTF("size of void ** = %zd", temp);	
+	PRINTF("size of void ** = %zd", temp);
 }
 
 int32_t swap_data_endianness(uint8_t * data, size_t type_length){

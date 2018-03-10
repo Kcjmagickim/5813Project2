@@ -3,8 +3,8 @@
 @brief: converts between integer and hex value
 @author: John Kim
 @date: Feb 3rd, 2018
-
-Note: All function descriptions 
+@revised: Feb 18th, 2018
+Note: All function descriptions
 resides in the header file.
 ***********************************/
 
@@ -50,13 +50,13 @@ uint8_t my_itoa(int32_t data, uint8_t * ptr, uint32_t base){
 		*ptr='-';
 	}
 	else{
-		*ptr= (char) (data+'0');	
+		*ptr= (char) (data+'0');
 	}
 	return exp+1;
 }
 
 int32_t my_atoi(uint8_t * ptr, uint8_t digits, uint32_t base){
-	int8_t i; 
+	int8_t i;
 	int32_t val = 0;
 	int8_t neg = 0;
 	if(!ptr) return -1;

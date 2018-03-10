@@ -3,6 +3,7 @@
 @brief: header file for .c file
 @author: John Kim
 @date: Feb 1st, 2018
+@revised: Feb 18th, 2018
 ***********************************/
 
 #ifndef CONVERSION_H_
