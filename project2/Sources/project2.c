@@ -1,3 +1,11 @@
+/**********************************
+@file: project2.c
+@brief: main execution of program happens here
+@author: John Kim
+@date: Mar 5th, 2018
+Note: all function descriptions in the header file
+***********************************/
+
 #include <stddef.h>
 #include <stdlib.h>
 #include "project2.h"
