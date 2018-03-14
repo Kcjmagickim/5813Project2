@@ -15,4 +15,6 @@ void stat_update(uint8_t data);
 
 uint8_t ispunc(uint8_t data);
 
+void DUMP_STAT();
+
 #endif /*project2*/
