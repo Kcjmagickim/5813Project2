@@ -11,29 +11,26 @@ uint32_t alph = 0;
 uint32_t numb = 0;
 uint32_t punc = 0;
 uint32_t misc = 0;
+char a[50] = "Number of alphabets in the string: ";
+char b[50] = "Number of punctuations in the string: ";
+char c[50] = "Number of numbers in the string: ";
+char d[50] = "Number of misc characters in the string: ";
+char number1[10] = "";
+char number2[10] = "";
+char number3[10] = "";
+char number4[10] = "";
+char nline[3] = "\n";
+char in[30] = "-----Starting Project 2-----\n";
+char dump[30] = "-----Input String-----\n";
+char done[30] = "-----Analysis of Input-----\n";
 
 void project2(){
 	GPIO_Configure();
 	RGB_BLUE_ON();
 
-	char in[30] = "-----Starting Project 2-----\n";
-	char dump[30] = "-----Input String-----\n";
-	char done[30] = "-----Analysis of Input-----\n";
-	char nline[3] = "\n";
-	char a[50] = "Number of alphabets in the string: ";
-	char b[50] = "Number of punctuations in the string: ";
-	char c[50] = "Number of numbers in the string: ";
-	char d[50] = "Number of misc characters in the string: ";
-	char number1[10] = "";
-	char number2[10] = "";
-	char number3[10] = "";
-	char number4[10] = "";
-
-
 	uint8_t stat = 0;
 	uint8_t out;
 	uint8_t end;
-	uint8_t digits;
 
 	#ifdef ESC
 		end=0x1b;
@@ -66,6 +63,13 @@ void project2(){
 		UART_send(&out);
 	}
 	UART_send(nline);
+
+	DUMP_STAT();
+	return;
+}
+
+void DUMP_STAT(){
+	uint8_t digits;
 
 	UART_send_string(done);
 	UART_send_string(a);
